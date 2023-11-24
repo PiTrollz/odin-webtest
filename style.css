@@ -2,6 +2,10 @@
     border: 1px dotted red;
 }*/
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -12,7 +16,7 @@ body {
 
 .header {
     background-color: #1F2937;
-    padding: 25px 200px 80px 200px;
+    padding: 25px 200px 50px 200px;
 }
     .logo-links {
         display: flex;
@@ -35,11 +39,11 @@ body {
             font-size: 18px;
             font-weight: bold;
         }
-        a {
+        .links a {
             color: #E5E7EB;
             text-decoration: none;
         }
-        a:hover {
+        .links a:hover {
             color: #c7c8c9;
         }
 
@@ -83,5 +87,72 @@ body {
             background-color: #e4efff;
             color: #1971ff;
         }
+
+.games {
+    padding: 0px 200px 50px 200px;
+}
+
+.game-title {
+    text-align: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 50px;
+}
+
+.game-image, .game-text {
+    display: flex;
+    justify-content: center;
+    gap: 50px;   
+}
+
+.game-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 4px solid #3882F6;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.45);
+}
+
+.game-text div {
+    width: 200px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.game-text a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #34455c;
+}
+
+.game-text a:hover {
+    color: #3882F6;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 50px 200px 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    width: 800px;
+}
+
+.autor {
+    width: 800px;
+    text-align: end;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1F2937;
+}
 
 
